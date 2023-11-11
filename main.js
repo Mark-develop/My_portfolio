@@ -52,7 +52,7 @@ function draw() {
       }
   }
 
-setInterval(draw, 80)
+setInterval(draw, 120)
 
 window.addEventListener('resize', () => location.reload())
 
