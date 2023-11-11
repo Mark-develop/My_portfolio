@@ -14,7 +14,7 @@ canvas{
     position: fixed;
     top: 0;
     z-index: -9999;
-    filter: blur(5px);
+    filter: brightness(0.7) blur(3px);
 }
 
 .tool-name{

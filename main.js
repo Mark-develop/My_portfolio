@@ -5,10 +5,10 @@ const C = document.querySelector("canvas"),
   W = C.width = innerWidth,
   H = C.height = innerHeight
 
-const str = "a1 bc d$3ef$ gh4ij k5l $mn6 +o$p qrst $uv wxyz",
+const str = "a1 bc d $3ef $  qdqd   c zx cz x c q gh4ij k5l $m n6 +o$p qrst $uv wxyz",
   matrix = str.split('')
 
-let font = 11,
+let font = 15,
   // количество колонок = ширина холста / размер шрифта
   col = W / font,
   arr = []
@@ -52,7 +52,7 @@ function draw() {
       }
   }
 
-setInterval(draw, 100)
+setInterval(draw, 80)
 
 window.addEventListener('resize', () => location.reload())
 
