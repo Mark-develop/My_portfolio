@@ -54,3 +54,7 @@ canvas{
     ::-webkit-scrollbar-thumb:hover {
     background: #54d2d479;
     }
+
+.mobile_full_h{
+    height: 100dvb;
+}
