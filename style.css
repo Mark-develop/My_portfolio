@@ -17,7 +17,7 @@ canvas{
     display: block;
     position: fixed;
     top: 0;
-    z-index: -9999;
+    z-index: -999;
     filter: brightness(0.7) blur(6px);
     transform: scale(1.3);
 }
