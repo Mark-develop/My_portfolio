@@ -1,5 +1,8 @@
 import './style.css'
 
+
+
+
 const C = document.querySelector("canvas"),
   $ = C.getContext("2d"),
   W = C.width = innerWidth,
@@ -55,5 +58,3 @@ function draw() {
 setInterval(draw, 120)
 
 window.addEventListener('resize', () => location.reload())
-
-// 
