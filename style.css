@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -31,7 +35,13 @@ canvas{
 
 .a-Block{
     border-radius: 5px;
-    padding: 20px;
+    padding: 15px;
+
+    img{
+        border-radius: 10px;
+
+        
+    }
 }
 
 .a-Block:hover{

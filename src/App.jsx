@@ -1,23 +1,45 @@
 import React from "react";
-import Experiences from "./components/Experiences";
+import Projects from "./components/RightSideContent/Projects/Projects.jsx"
 
 function App() {
   return (
-      <div id="app" class="h-screen">
-        <Experiences/>
+      <div id="app" class="h-screen ">
+
         <div class="flex lg:flex-row flex-col flex-col w-4/5 m-auto container">
           <div class="self-start lg:sticky top-0 lg:md:w-1/2 mobile_full_h  lg:h-screen py-10 lg:py-24 flex flex-col justify-between">
             <div class="">
               <h1 class="text-white/80 text-5xl font-bold tracking-tight ">
                 Mark Lievientsov 
               </h1>
-              <p class="mt-3 text-2xl font-medium tracking-tight text-white/80">
+              <p class=" mt-4  text-2xl font-medium tracking-tight text-white/80">
                 Full-Stack Engineer
               </p>
-              <p class="mt-4 text-lg max-w-xs leading-normal text-white/50">
+              <p class="mt-4 mb-4 text-lg max-w-xs leading-normal text-white/50">
                 I build accessible, inclusive products and digital experiences
                 for the web.
               </p>
+              <a
+              href="CV.pdf"
+              target="_blank"
+              class=" transition-all group text-white/80 w-10 border-b border-solid border-hover border-opacity-0 hover:border-opacity-100"
+            >
+              View full resume{" "}
+              <span class="group-hover:text-hover">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-1 group-focus-visible:translate-x-2 motion-reduce:transition-none"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </span>
+            </a>
             </div>
             <nav>
               <ul class="w-max">
@@ -99,8 +121,7 @@ function App() {
             </ul>
           </div>
 
-          <div class="lg:md:w-1/2 pb-10 lg:pb-0">
-            <div id="about" class="lg:pt-24">
+          <div  id="about" class="lg:md:w-1/2 pb-10 lg:pb-0 lg:pt-24">
               <p class="mb-4 text-white/50">
                 In 2019, after watching "The Social Network" for the first time,
                 I was inspired. As a driven high school student, I made the
@@ -127,8 +148,6 @@ function App() {
                 hiking in the mountains, or simply immersing myself in the
                 beauty of music.
               </p>
-            </div>
-
             <a
               href="#"
               class="transition-all grid grid-cols-8 mb-14 mt-1 lg:mt-24 w-full text-white/50 hover:bg-white/5 a-Block"
@@ -152,28 +171,8 @@ function App() {
               </div>
             </a>
 
-            <a
-              href="CV.pdf"
-              target="_blank"
-              class=" transition-all group text-white/80 w-10 pb-px border-b border-solid border-hover border-opacity-0 hover:border-opacity-100"
-            >
-              View full resume{" "}
-              <span class="group-hover:text-hover">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  class="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-1 group-focus-visible:translate-x-2 motion-reduce:transition-none"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </span>
-            </a>
+           
+            <Projects />
           </div>
         </div>
         <canvas></canvas>
