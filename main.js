@@ -3,10 +3,20 @@ import './style.css'
 
 
 
-const C = document.querySelector("canvas"),
-  $ = C.getContext("2d"),
-  W = C.width = innerWidth,
-  H = C.height = innerHeight
+let C = document.querySelector("canvas"),
+  $ = C.getContext("2d");
+
+
+let  W = C.width = innerWidth,
+     H = C.height = window.innerHeight
+
+// let getWH = (W, H) => {
+
+//   W = C.width = innerWidth;
+//   H = C.height = innerHeight;
+  
+//   return W, H;
+// }
 
 
 const str = "a1 bc d $3ef $  qdqd   c zx cz x c q gh4ij k5l $m n6 +o$p qrst $uv wxyz",
@@ -59,4 +69,4 @@ function draw() {
 setInterval(draw, 120)
 
 
-window.addEventListener('resize', () => draw())
+window.addEventListener('resize', () => location.reload())
